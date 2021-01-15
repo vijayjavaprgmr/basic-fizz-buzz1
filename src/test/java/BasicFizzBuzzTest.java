@@ -28,4 +28,9 @@ public class BasicFizzBuzzTest {
 	public void testMultipleofFiveReturnBuzz() {
 		assertThat(basicFizzBuzz.getFizzBuzzScore(200), is("buzz"));
 	}
+
+	@Test
+	public void testMultipleofThreeandFiveReturnFizzBuzz() {
+		assertThat(basicFizzBuzz.getFizzBuzzScore(315), is("fizz buzz"));
+	}
 }
