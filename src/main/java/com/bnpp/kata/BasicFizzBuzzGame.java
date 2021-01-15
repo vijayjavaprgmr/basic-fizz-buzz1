@@ -5,6 +5,8 @@ public class BasicFizzBuzzGame {
 		String returnScore = null;
 		if (i % 3 == 0) {
 			returnScore = "fizz";
+		} else if (i % 5 == 0) {
+			returnScore = "buzz";
 		} else {
 			returnScore = Integer.toString(i);
 		}
