@@ -11,4 +11,10 @@ public class BasicFizzBuzzTest {
 		BasicFizzBuzzGame basicFizzBuzz = new BasicFizzBuzzGame();
 		assertThat(basicFizzBuzz.getFizzBuzzScore(1), is("1"));
 	}
+
+	@Test
+	public void testMultiplesofThreeReturnFizz() {
+		BasicFizzBuzzGame basicFizzBuzz = new BasicFizzBuzzGame();
+		assertThat(basicFizzBuzz.getFizzBuzzScore(123), is("fizz"));
+	}
 }
